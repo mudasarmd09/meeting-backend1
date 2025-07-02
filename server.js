@@ -12,7 +12,7 @@ connectDB();
 const app = express();
 app.use(
   cors({
-    origin: "https://meeting-frontend1.vercel.app/",
+    origin: "https://meeting-frontend1.vercel.app",
     credentials: true,
   })
 );
