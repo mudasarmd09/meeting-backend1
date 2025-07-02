@@ -12,7 +12,7 @@ connectDB();
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://meeting-frontend1.vercel.app/",
     credentials: true,
   })
 );
@@ -22,5 +22,6 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/meetings", meetingRoutes);
 
-const PORT = process.env.PORT || 5000;
+
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
